@@ -26,7 +26,7 @@ def get_suap_token(username: str, password: str) -> str:
         return payload[token]
     return ''
 username = input("Digite sua matricula:")
-senha = input("Digite sua senha:")
+senha = getpass.getpass("Digite sua senha:")
 TOKEN=get_suap_token(username,senha)
 #MATRICULA = input('digite a matricula: ')
 #TOKEN = '0GrRTeQzIh03nn4I6hGqdgI45ksp7hOoft4P0BOGa9jKzqeBQ7N1O4zMZmXHt1gE'
